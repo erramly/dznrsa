@@ -1,30 +1,31 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
-</template>
-
+<template><HomeView /></template>
+<script>
+import HomeView from "@/views/HomeView.vue";
+export default {
+  components: {
+    HomeView,
+  },
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+:root {
+  --bg-orange: #f86642;
+  --bg-black: #292526;
+  --bg-white: #f6f6f6;
+}
+a,
+h1,
+h2,
+h3,
+span,
+div,
+button,
+.placeholder {
+  font-family: "Cairo", sans-serif;
 }
 </style>
